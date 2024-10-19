@@ -470,8 +470,6 @@ function calcularPropina(){
         
         const userSession = JSON.parse(localStorage.getItem('user'))
         const user = userSession.name
-        console.log(userSession)
-        console.log(user)
 
         const orden = {
             cliente,
