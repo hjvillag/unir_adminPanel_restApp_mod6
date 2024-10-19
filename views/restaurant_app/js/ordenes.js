@@ -14,7 +14,7 @@ const userSession = JSON.parse(localStorage.getItem('user'))
 async function mostrarOrdenes() {
     const ordenes = await obtenerOrdenes();
     //console.log(ordenes);
-    let ordenesFiltradas = ordenes.filter(orden => orden.user === userSession.id)
+    let ordenesFiltradas = ordenes.filter(orden => orden.user === userSession.name)
 
     const listado = document.querySelector('#listado-Ordenes')
     listado.innerHTML = ''
