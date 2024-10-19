@@ -14,7 +14,7 @@ const userSession = JSON.parse(localStorage.getItem('user'))
 async function mostrarOrdenes() {
     const ordenes = await obtenerOrdenes();
     //console.log(ordenes);
-    let ordenesFiltradas = ordenes.filter(orden => orden.user === userSession.username)
+    let ordenesFiltradas = ordenes.filter(orden => orden.user === userSession.id)
 
     const listado = document.querySelector('#listado-Ordenes')
     listado.innerHTML = ''
@@ -52,7 +52,7 @@ async function mostrarOrdenes() {
             </th>
 
             <th class="text-center px-3 py-3 border-bottom border-secondary text-uppercase">
-                <p>${user}</p>
+                <p>${userSession.name}</p>
             </th>
         `
         listado.appendChild(fila)
