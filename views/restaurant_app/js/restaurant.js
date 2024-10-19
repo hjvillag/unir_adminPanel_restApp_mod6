@@ -2,6 +2,7 @@
 const btnGuardarCliente = document.querySelector('#guardar-cliente')
 const cerrarBtn = document.querySelector('#cerrar-btn')
 const nuevo = document.querySelector('#nuevo')
+const user = JSON.parse(localStorage.getItem('user'))
 
 const nuevaOrden = async orden=>{
     try{
