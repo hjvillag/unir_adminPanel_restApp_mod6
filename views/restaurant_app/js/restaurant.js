@@ -1,7 +1,6 @@
 //creamos los selectores
 const btnGuardarCliente = document.querySelector('#guardar-cliente')
 const cerrarBtn = document.querySelector('#cerrar-btn')
-const user = JSON.parse(localStorage.getItem('user'))
 const nuevo = document.querySelector('#nuevo')
 
 const nuevaOrden = async orden=>{
@@ -470,6 +469,8 @@ function calcularPropina(){
         
         const userSession = JSON.parse(localStorage.getItem('user'))
         const user = userSession.name
+        console.log(userSession)
+        console.log(user)
 
         const orden = {
             cliente,
