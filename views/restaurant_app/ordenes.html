@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant full stack</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <header class="py-4 bg-primary">
+        <h1 class="text-center text-white fs-3">Restaurant full stack</h1>
+        <div class="d-flex mt-4 justify-content-center"></div>
+    </header>
+
+    <div class="d-flex mt-4 justify-content-center gap-2    ">
+        <button  data-bs-toggle="modal" data-bs-target="#formulario" type="button" class="btn btn-success">Nueva Orden</button>
+        <button  class="btn btn-success" id="ordenes">Ordenes</button>
+        <button  class="btn btn-success" id="cerrar-btn">Salir</button>
+    </div>
+
+    <div class="container">
+        <main class="px-5 py-4">       
+            <div class="mt-4">
+                <div class="py-2 overflow-auto">
+                    <div class="table-responsive shadow rounded-lg border border-secondary">
+                        <table class="table">
+                            <thead class="bg-primary text-white">
+                                <tr>
+                                    <th class="text-center text-uppercase">Mesa</th>
+                                    <th class="text-center text-uppercase">Hora</th>
+                                    <th class="text-center text-uppercase">Pedido</th>
+                                    <th class="text-center text-uppercase">Placa</th>
+                                    <th class="text-center text-uppercase">Tipo</th>
+                                    <th class="text-center text-uppercase">KM</th>
+                                    <th class="text-center text-uppercase">Estado</th>
+                                    <th class="text-center text-uppercase">Ubicación</th>
+                                    <th class="text-center text-uppercase">Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody id="listado-Ordenes"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/ordenes.js"></script>
+</body>
+</html>
