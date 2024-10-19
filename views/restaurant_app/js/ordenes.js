@@ -52,7 +52,7 @@ async function mostrarOrdenes() {
             </th>
 
             <th class="text-center px-3 py-3 border-bottom border-secondary text-uppercase">
-                <p>${userSession.name}</p>
+                <p>${user}</p>
             </th>
         `
         listado.appendChild(fila)
