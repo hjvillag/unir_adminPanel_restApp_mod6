@@ -9,11 +9,11 @@ const obtenerOrdenes = async ()=>{
 }
 
 const userSession = JSON.parse(localStorage.getItem('user'))
-console.log(userSession)
+//console.log(userSession)
 
 async function mostrarOrdenes() {
     const ordenes = await obtenerOrdenes();
-    console.log(ordenes);
+    //console.log(ordenes);
     let ordenesFiltradas = ordenes.filter(orden => orden.user === userSession.username)
 
     const listado = document.querySelector('#listado-Ordenes')
